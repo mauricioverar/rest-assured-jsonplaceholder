@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cl.mauriciovera.test.UserApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.990 s -- in cl.mauriciovera.test.UserApiTest
