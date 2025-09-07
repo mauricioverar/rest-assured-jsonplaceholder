@@ -1,21 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-07T17:13:40 CLST" name="Surefire suite" finished-at="2025-09-07T17:13:42 CLST" duration-ms="1790">
+  <suite started-at="2025-09-07T17:28:22 CLST" name="Surefire suite" finished-at="2025-09-07T17:28:26 CLST" duration-ms="3837">
     <groups>
     </groups>
-    <test started-at="2025-09-07T17:13:40 CLST" name="Surefire test" finished-at="2025-09-07T17:13:42 CLST" duration-ms="1790">
-      <class name="cl.mauriciovera.test.UserApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:cl.mauriciovera.test.UserApiTest@3d121db3]" started-at="2025-09-07T17:13:40 CLST" name="setup" finished-at="2025-09-07T17:13:40 CLST" duration-ms="221" status="PASS">
+    <test started-at="2025-09-07T17:28:22 CLST" name="Surefire test" finished-at="2025-09-07T17:28:26 CLST" duration-ms="3837">
+      <class name="cl.mauriciovera.test.UserApiParametrizadoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:22 CLST" name="setup" finished-at="2025-09-07T17:28:22 CLST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="obtenerUsuario_DebeResponderEnMenosDe2Segundos()[pri:0, instance:cl.mauriciovera.test.UserApiTest@3d121db3]" started-at="2025-09-07T17:13:40 CLST" name="obtenerUsuario_DebeResponderEnMenosDe2Segundos" finished-at="2025-09-07T17:13:42 CLST" duration-ms="1395" status="PASS">
+        <test-method signature="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta(int)[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:22 CLST" name="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta" data-provider="userIds" finished-at="2025-09-07T17:28:24 CLST" duration-ms="1398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta -->
+        <test-method signature="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta(int)[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:24 CLST" name="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta" data-provider="userIds" finished-at="2025-09-07T17:28:24 CLST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta -->
+        <test-method signature="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta(int)[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:24 CLST" name="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta" data-provider="userIds" finished-at="2025-09-07T17:28:24 CLST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta -->
+        <test-method signature="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta(int)[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:24 CLST" name="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta" data-provider="userIds" finished-at="2025-09-07T17:28:25 CLST" duration-ms="580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta -->
+        <test-method signature="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta(int)[pri:0, instance:cl.mauriciovera.test.UserApiParametrizadoTest@6973bf95]" started-at="2025-09-07T17:28:25 CLST" name="obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta" data-provider="userIds" finished-at="2025-09-07T17:28:25 CLST" duration-ms="723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerUsuario_PorId_DebeCoincidirIdEnRespuesta -->
+      </class> <!-- cl.mauriciovera.test.UserApiParametrizadoTest -->
+      <class name="cl.mauriciovera.test.UserApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:cl.mauriciovera.test.UserApiTest@4445629]" started-at="2025-09-07T17:28:25 CLST" name="setup" finished-at="2025-09-07T17:28:25 CLST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="obtenerUsuario_DebeResponderEnMenosDe2Segundos()[pri:0, instance:cl.mauriciovera.test.UserApiTest@4445629]" started-at="2025-09-07T17:28:25 CLST" name="obtenerUsuario_DebeResponderEnMenosDe2Segundos" finished-at="2025-09-07T17:28:26 CLST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerUsuario_DebeResponderEnMenosDe2Segundos -->
-        <test-method signature="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe()[pri:0, instance:cl.mauriciovera.test.UserApiTest@3d121db3]" started-at="2025-09-07T17:13:42 CLST" name="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe" finished-at="2025-09-07T17:13:42 CLST" duration-ms="155" status="PASS">
+        <test-method signature="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe()[pri:0, instance:cl.mauriciovera.test.UserApiTest@4445629]" started-at="2025-09-07T17:28:26 CLST" name="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe" finished-at="2025-09-07T17:28:26 CLST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe -->

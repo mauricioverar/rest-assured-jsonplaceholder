@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: cl.mauriciovera.test.UserApiTest
+Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.049 s -- in cl.mauriciovera.test.UserApiTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.110 s -- in TestSuite

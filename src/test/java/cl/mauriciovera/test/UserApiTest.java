@@ -7,7 +7,7 @@ import io.restassured.RestAssured; // RestAssured
 import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo; // Hamcrest para aserciones legibles.  
+import static org.hamcrest.Matchers.*; // Hamcrest para aserciones legibles.  equalTo, lessThan
 
 public class UserApiTest {
   @BeforeClass
@@ -34,8 +34,9 @@ public class UserApiTest {
         .when()
         .get("/users/1")
         .then()
-        .time(org.hamcrest.Matchers.lessThan(2000L)) // Tiempo en ms
-        .log().all() // Log de la respuesta
+        .time(lessThan(2000L)) // Tiempo en ms
+        .log().all() // Log de la respuesta, es útil para debugging. 
+        // Puedes usar  `.log().ifValidationFails()` para logs solo en fallo.
         .statusCode(200)
         .contentType(ContentType.JSON)
         .body("id", equalTo(1));
