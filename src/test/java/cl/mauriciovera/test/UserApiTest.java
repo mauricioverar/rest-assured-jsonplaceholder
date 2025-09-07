@@ -1,9 +1,9 @@
 package cl.mauriciovera.test;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeClass; // usando TestNG
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
+import io.restassured.RestAssured; // RestAssured
 import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.given;
@@ -25,5 +25,19 @@ public class UserApiTest {
         .contentType(ContentType.JSON)
         .body("id", equalTo(1))
         .body("name", equalTo("Leanne Graham")); // Nota: en typicode, el nombre real es este
+  }
+
+  @Test
+  public void obtenerUsuario_DebeResponderEnMenosDe2Segundos() {
+    given()
+        .log().all() // Log de la petición
+        .when()
+        .get("/users/1")
+        .then()
+        .time(org.hamcrest.Matchers.lessThan(2000L)) // Tiempo en ms
+        .log().all() // Log de la respuesta
+        .statusCode(200)
+        .contentType(ContentType.JSON)
+        .body("id", equalTo(1));
   }
 }

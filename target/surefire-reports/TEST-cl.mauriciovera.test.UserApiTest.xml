@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.mauriciovera.test.UserApiTest" time="1.99" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.mauriciovera.test.UserApiTest" time="2.049" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\mvera\AppData\Local\Temp\surefire17835872635153685469 2025-09-07T17-01-31_563-jvmRun1 surefire-20250907170132314_1tmp surefire_0-20250907170132314_2tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\mvera\AppData\Local\Temp\surefire8478483288527778370 2025-09-07T17-13-39_874-jvmRun1 surefire-20250907171339980_1tmp surefire_0-20250907171339980_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\QA TEST\M6 Pruebas de Servicios Web\A4_5 rest_assured\jsonplaceholder_rest_Assured\rest-assured\target\test-classes;C:\QA TEST\M6 Pruebas de Servicios Web\A4_5 rest_assured\jsonplaceholder_rest_Assured\rest-assured\target\classes;C:\Users\mvera\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\mvera\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\mvera\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\mvera\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\mvera\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\mvera\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mvera\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\mvera\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\mvera\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\mvera\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\mvera\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\mvera\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\mvera\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\mvera\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\mvera\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\mvera\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\mvera\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mvera\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\mvera\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\mvera\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mvera\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\mvera\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\mvera\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\mvera\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\mvera\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -57,5 +57,69 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe" classname="cl.mauriciovera.test.UserApiTest" time="1.495"/>
+  <testcase name="obtenerUsuario_DebeResponderEnMenosDe2Segundos" classname="cl.mauriciovera.test.UserApiTest" time="1.395">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 07 Sep 2025 20:13:40 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-credentials: true
+Cache-Control: max-age=43200
+etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+expires: -1
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=mT2ReEAyMAOGRenyONZ8WAo%2FZhipk1J3%2BUa7avWICSA%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1751974539"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=mT2ReEAyMAOGRenyONZ8WAo%2FZhipk1J3%2BUa7avWICSA%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1751974539"
+Server: cloudflare
+vary: Origin, Accept-Encoding
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-powered-by: Express
+x-ratelimit-limit: 1000
+x-ratelimit-remaining: 999
+x-ratelimit-reset: 1751974584
+Age: 7382
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: 97b8de383902a29b-EZE
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="obtenerUsuario_DebeRetornarUsuarioConId1YNombreJohnDoe" classname="cl.mauriciovera.test.UserApiTest" time="0.154"/>
 </testsuite>
